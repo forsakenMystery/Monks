@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="id3.FXMLDocumentController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="285.0">
+               <children>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Label text="Data Train Split:  " />
+                        <TextField fx:id="coef" disable="true" promptText="0.5" />
+                     </children>
+                  </HBox>
+                  <Button fx:id="train" mnemonicParsing="false" onMouseClicked="#trainClicked" text="set train set">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button fx:id="test" disable="true" mnemonicParsing="false" onMouseClicked="#testClicked" text="set test set">
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+      </Button>
+      <Button fx:id="training" disable="true" mnemonicParsing="false" onMouseClicked="#trainingClicked" text="training">
+         <VBox.margin>
+            <Insets top="25.0" />
+         </VBox.margin>
+      </Button>
+      <Button fx:id="draw" disable="true" mnemonicParsing="false" onMouseClicked="#drawClicked" text="draw">
+         <VBox.margin>
+            <Insets top="25.0" />
+         </VBox.margin>
+      </Button>
+      <Button fx:id="exit" mnemonicParsing="false" onMouseClicked="#exitClickes" text="exit">
+         <VBox.margin>
+            <Insets top="25.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>
